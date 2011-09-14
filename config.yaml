@@ -1,0 +1,7 @@
+END_POINT: http://testflightapp.com/api/builds.json
+API_TOKEN: API_TOKEN_GOES_HERE
+TEAM_TOKEN: TEAM_TOKEN_GOES_HERE 
+DIST_LIST: DISTRIBUTION_LIST_NAMES_GO_HERE # Comma seperate the names.
+REPLACE: true
+NOTIFY: false #default to no since it is automatically uploading
+NOTES: Auto Uploaded
