@@ -1,4 +1,4 @@
-= TestFlight Deploy Script
+= TestFlight Auto Deploy Script
 
 A very simple testflight-deploy script for my personal use. Deploy code with rest-client was taken from https://github.com/lukeredpath/betabuilder/blob/master/lib/beta_builder/deployment_strategies/testflight.rb of https://github.com/lukeredpath/betabuilder. Thanks to https://github.com/lukeredpath for Betabuilder. It was a bit too much for my purpose.
 
@@ -6,9 +6,10 @@ A very simple testflight-deploy script for my personal use. Deploy code with res
 == Prerequisite
 Install the rest-client gem if you don't already have it.
   $gem install rest-client
-Edit testflight-deploy.rb and change the constants to your's:
+Edit config.yaml and change the constants to your's:
   API_TOKEN = "API_TOKEN_GOES_HERE"                 # Can be found at http://testflightapp.com/account/
   TEAM_TOKEN = "TEAM_TOKEN_GOES_HERE"               # Click (edit) next the Current Team: on the top left corner.
   DIST_LIST = "DISTRIBUTION_LIST_NAMES_GOES_HERE"   # Comma seperate the names of the distribution list.
 == Usage
-  $ruby testflight-deploy.rb MyApp1.0.ipa ReleaseNote_1.0.txt
+  $ruby testflight-deploy.rb
+  Then save a .ipa file to the directory
